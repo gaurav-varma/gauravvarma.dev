@@ -1,3 +1,14 @@
 .name {
   font-weight: 500;
 }
+
+.post_title_link {
+  --tw-text-opacity: 1;
+  color: rgba(44, 44, 44, var(--tw-text-opacity)) !important;
+  text-decoration: none;
+}
+
+.post_title_link:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(60, 123, 240, var(--tw-text-opacity)) !important;
+}
