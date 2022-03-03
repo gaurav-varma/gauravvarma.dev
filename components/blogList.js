@@ -136,7 +136,7 @@ export default function BlogList() {
             <p className="post-meta text-black-50">September 15, 2021</p>
           </div>
           <hr className="my-4"></hr>
-          <div className="d-flex justify-content-end mb-4">
+          <div className="d-flex justify-content-end mb-4 mt-4">
             <a
               className="text-uppercase text-decoration-none text-muted fw-light"
               href="#"
