@@ -8,6 +8,7 @@ export default function Home() {
     <main>
       <Header></Header>
       <BlogList></BlogList>
+      <Footer></Footer>
     </main>
   );
 }
