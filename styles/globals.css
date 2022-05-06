@@ -1,0 +1,30 @@
+body {
+  background-color: #111 !important;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ivar Text', 'Georgia', serif;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(159 159 159/var(--tw-text-opacity));
+}
+
+.headshot-text {
+  font-size: 15px;
+}
+
+.post-meta {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82/var(--tw-text-opacity));
+  font-size: 14px;
+}
+
+hr {
+  --tw-text-opacity: 1;
+  background-color: rgb(82 82 82/var(--tw-text-opacity)) !important;
+}

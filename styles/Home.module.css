@@ -4,9 +4,9 @@
 
 .post_title_link {
   --tw-text-opacity: 1;
-  color: rgba(44, 44, 44, var(--tw-text-opacity)) !important;
+  color: rgba(255,255,255, var(--tw-text-opacity)) !important;
   text-decoration: none;
-  word-wrap: break-word; 
+  word-wrap: break-word;
 }
 
 .post_title_link:hover {

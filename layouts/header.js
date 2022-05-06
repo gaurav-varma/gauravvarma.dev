@@ -13,7 +13,7 @@ export default function Header() {
           height={100}
           layout="fixed"
         />
-        <p className={styles.name}>GAURAV VARMA</p>
+        <p className={styles.name + ' headshot-text'}>GAURAV VARMA</p>
       </div>
     </header>
   );

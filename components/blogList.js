@@ -21,7 +21,7 @@ export default function BlogList() {
               Rails Active Support provides various extensions, utilities, and
               helpers. It provides a collection of utility classes...
             </p>
-            <p className="post-meta text-black-50">November 19, 2021</p>
+            <p className="post-meta">November 19, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="post-preview">
@@ -40,7 +40,7 @@ export default function BlogList() {
               ruby debugger. It offers features like Stepping, Breaking,
               Evaluating, Tracking...
             </p>
-            <p className="post-meta text-black-50">November 9, 2021</p>
+            <p className="post-meta">November 9, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="post-preview">
@@ -58,7 +58,7 @@ export default function BlogList() {
               In web applications, forms are one of the most essential
               interfaces for user input and it can be tedious to write...
             </p>
-            <p className="post-meta text-black-50">November 9, 2021</p>
+            <p className="post-meta">November 9, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="post-preview">
@@ -76,7 +76,7 @@ export default function BlogList() {
               Active Record in Rails provides various methods like exists?,
               persisted?, destroyed? and many more...
             </p>
-            <p className="post-meta text-black-50">November 9, 2021</p>
+            <p className="post-meta">November 9, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="post-preview">
@@ -95,7 +95,7 @@ export default function BlogList() {
               easily upload files to a cloud storage service like Amazon S3,
               Google Cloud Storage, or Microsoft Azure...
             </p>
-            <p className="post-meta text-black-50">October 19, 2021</p>
+            <p className="post-meta">October 19, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="post-preview">
@@ -114,7 +114,7 @@ export default function BlogList() {
               validate the state of an object before it is stored in the
               database...
             </p>
-            <p className="post-meta text-black-50">October 5, 2021</p>
+            <p className="post-meta">October 5, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="post-preview">
@@ -133,7 +133,7 @@ export default function BlogList() {
               ActiveRecord we can easily query and handle database objects
               without writing any SQL...
             </p>
-            <p className="post-meta text-black-50">September 15, 2021</p>
+            <p className="post-meta">September 15, 2021</p>
           </div>
           <hr className="my-4"></hr>
           <div className="d-flex justify-content-end mb-4 mt-4">
