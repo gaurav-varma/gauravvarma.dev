@@ -62,25 +62,12 @@ hr {
   background-color: rgb(82 82 82 / var(--tw-text-opacity)) !important;
 }
 
-pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  border-radius: 6px;
-}
-
-pre code {
-  font-size: 13.6px;
-  line-height: 19.7167px;
-  color: rgb(201, 209, 217);
-}
-
 p a {
   color: rgb(88, 166, 255);
+  word-break: break-all;
 }
 
-code {
+p code {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
