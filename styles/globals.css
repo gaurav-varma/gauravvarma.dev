@@ -76,6 +76,10 @@ p code {
   color: rgb(201, 209, 217);
 }
 
+.markdown-body pre {
+  background-color: rgb(22, 27, 34) !important;
+}
+
 .markdown-body h3,
 .markdown-body h2,
 .markdown-body h4,
