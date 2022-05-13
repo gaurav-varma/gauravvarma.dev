@@ -77,4 +77,4 @@ end
 Check out this [pull request](https://github.com/rails/rails/pull/41841/files)
 for more details.
 
-This article was originally published on the this [website](https://www.bigbinary.com/blog/rails-7-adds-active-record-relation-structurally-compatible).
+This article was originally published on this [website](https://www.bigbinary.com/blog/rails-7-adds-active-record-relation-structurally-compatible).

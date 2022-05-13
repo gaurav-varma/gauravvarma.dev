@@ -82,4 +82,4 @@ helpers like `greater_than`, `greater_than_or_equal_to`, `equal_to`,
 Check out this [pull request](https://github.com/rails/rails/pull/40095) for
 more details.
 
-This article was originally published on the this [website](https://www.bigbinary.com/blog/rails-7-adds-comparison-validator-to-active-record).
+This article was originally published on this [website](https://www.bigbinary.com/blog/rails-7-adds-comparison-validator-to-active-record).

@@ -98,4 +98,4 @@ To display we can use the `variant` method.
 `variants` can also be used on `has_many_attached`. Check out this
 [pull request](https://github.com/rails/rails/pull/39135) for more details.
 
-This article was originally published on the this [website](https://www.bigbinary.com/blog/rails-7-adds-ability-to-use-predefined-variants).
+This article was originally published on this [website](https://www.bigbinary.com/blog/rails-7-adds-ability-to-use-predefined-variants).

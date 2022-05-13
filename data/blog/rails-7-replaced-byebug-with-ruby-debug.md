@@ -89,4 +89,4 @@ The invoked debugger results in the following.
 
 Check out this [pull request](https://github.com/rails/rails/pull/43187) for more details and for commands or features of Ruby Debug, please visit [Ruby-Debug](https://github.com/ruby/debug).
 
-This article was originally published on the this [website](https://www.bigbinary.com/blog/rails-7-replaced-byebug-with-ruby-debug).
+This article was originally published on this [website](https://www.bigbinary.com/blog/rails-7-replaced-byebug-with-ruby-debug).

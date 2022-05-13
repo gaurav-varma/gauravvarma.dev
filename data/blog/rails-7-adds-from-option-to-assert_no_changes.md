@@ -77,4 +77,4 @@ end
 Check out this [pull request](https://github.com/rails/rails/pull/42277) for
 more details.
 
-This article was originally published on the this [website](https://www.bigbinary.com/blog/rails-7-adds-from-option-to-assert_no_changes).
+This article was originally published on this [website](https://www.bigbinary.com/blog/rails-7-adds-from-option-to-assert_no_changes).

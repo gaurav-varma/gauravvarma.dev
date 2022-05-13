@@ -67,4 +67,4 @@ previous_user.previously_persisted? # returns true
 Check out this [pull request](https://github.com/rails/rails/pull/42389) for
 more details.
 
-This article was originally published on the this [website](https://www.bigbinary.com/blog/rails-7-adds-activerecord-previously_persisted).
+This article was originally published on this [website](https://www.bigbinary.com/blog/rails-7-adds-activerecord-previously_persisted).
