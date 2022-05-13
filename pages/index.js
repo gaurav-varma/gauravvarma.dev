@@ -1,14 +1,23 @@
 import Header from "../layouts/header";
 import Footer from "../layouts/footer";
 import BlogList from "../components/blogList";
-import "bootstrap/dist/css/bootstrap.css";
+import { getAllPosts } from "./api/blog";
 
-export default function Home() {
+export default function Home({ posts }) {
+  const recentPosts = posts.slice(0, 5);
   return (
     <main>
       <Header></Header>
-      <BlogList></BlogList>
+      <BlogList posts={recentPosts} showOlderPostLink={true}></BlogList>
       <Footer></Footer>
     </main>
   );
+}
+
+export function getStaticProps() {
+  return {
+    props: {
+      posts: getAllPosts(),
+    },
+  };
 }
