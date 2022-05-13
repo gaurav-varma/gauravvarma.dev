@@ -101,3 +101,7 @@ code {
 p.post-subtitle {
   opacity: 0.7;
 }
+
+h1.post-title {
+  word-break: break-word;
+}
