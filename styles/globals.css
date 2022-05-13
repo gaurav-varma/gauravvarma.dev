@@ -1,30 +1,103 @@
 body {
-  background-color: #111 !important;
+  background-color: rgb(13, 17, 23) !important;
   color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Ivar Text', 'Georgia', serif;
+.name {
+  font-weight: 500;
+}
+
+.post_title_link {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.post_title_link:visited {
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+  text-decoration: none;
+}
+
+.post_title_link:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(88, 166, 255) !important;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ivar Text", "Georgia", serif;
 }
 
 p {
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgb(159 159 159/var(--tw-text-opacity));
+  color: rgb(201, 209, 217);
 }
 
 .headshot-text {
   font-size: 15px;
 }
 
+.headshot:hover {
+  cursor: pointer;
+}
+
 .post-meta {
-  --tw-text-opacity: 1;
-  color: rgb(82 82 82/var(--tw-text-opacity));
   font-size: 14px;
+  color: rgb(139, 148, 158);
+  opacity: 0.6;
 }
 
 hr {
   --tw-text-opacity: 1;
-  background-color: rgb(82 82 82/var(--tw-text-opacity)) !important;
+  border-color: var(--color-border-default) !important;
+  border-style: solid !important;
+  background-color: rgb(82 82 82 / var(--tw-text-opacity)) !important;
+}
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 6px;
+}
+
+pre code {
+  font-size: 13.6px;
+  line-height: 19.7167px;
+  color: rgb(201, 209, 217);
+}
+
+p a {
+  color: rgb(88, 166, 255);
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(110, 118, 129, 0.4);
+  border-radius: 6px;
+  color: rgb(201, 209, 217);
+}
+
+.markdown-body h3,
+.markdown-body h2,
+.markdown-body h4,
+.markdown-body h5 {
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+p.post-subtitle {
+  opacity: 0.6;
 }
