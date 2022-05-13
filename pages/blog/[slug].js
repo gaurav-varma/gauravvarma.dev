@@ -2,6 +2,7 @@ import { getAllPosts, getPostBySlug } from "../api/blog";
 import Header from "../../layouts/header";
 import Footer from "../../layouts/footer";
 import MarkdownToHtml from "../../components/markdownToHtml";
+import Link from "next/link";
 
 export default function Post({ post }) {
   const prettyDate = new Date(post.createdAt).toLocaleString("en-US", {
@@ -18,10 +19,17 @@ export default function Post({ post }) {
           <div className="col-md-12 col-lg-12 col-xl-12 col-sm-12">
             <article key={post.slug} className="text-center">
               <div className="post-preview">
-                <p className="post-meta">
-                  <time dateTime={post.createdAt}>{prettyDate}</time>
+                <p className="post-back-link mb-4">
+                  <Link href="/blog" passHref>
+                    <a className="text-uppercase text-decoration-none text-muted fw-light">
+                      ← BACK TO BLOG
+                    </a>
+                  </Link>
                 </p>
                 <h1 className="post-title fw-bold">{post.title}</h1>
+                <p className="post-meta mt-4  mb-0">
+                  <time dateTime={post.createdAt}>{prettyDate}</time>
+                </p>
               </div>
             </article>
           </div>

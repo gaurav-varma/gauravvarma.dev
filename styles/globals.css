@@ -52,7 +52,13 @@ p {
 .post-meta {
   font-size: 14px;
   color: rgb(139, 148, 158);
-  opacity: 0.6;
+  opacity: 0.7;
+}
+
+.post-back-link a {
+  font-size: 14px;
+  color: rgb(139, 148, 158) !important;
+  opacity: 1;
 }
 
 hr {

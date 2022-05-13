@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="d-flex justify-content-center py-3">
       <Link href="/" passHref>
-        <div className="py-5 text-center headshot">
+        <div className="my-5 text-center headshot">
           <img
             className="d-block mx-auto mb-2 rounded-circle"
             src="/gauravvarma.jpg"
