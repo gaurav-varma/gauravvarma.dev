@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import CodeBlock from "./CodeBlock";
+import CodeBlock from "./codeBlock";
 
 export default function MarkdownToHtml({ content }) {
   return (
