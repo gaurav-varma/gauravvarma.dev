@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(13, 17, 23) !important;
   color: #fff;
+  background: black;
 }
 
 .name {
@@ -99,5 +99,5 @@ code {
 }
 
 p.post-subtitle {
-  opacity: 0.6;
+  opacity: 0.7;
 }
