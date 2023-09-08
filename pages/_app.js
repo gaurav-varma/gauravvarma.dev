@@ -1,6 +1,6 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "../styles/globals.css";
-import { DefaultSeo } from "next-seo";
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/globals.css';
+import { DefaultSeo } from 'next-seo';
 import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
@@ -9,93 +9,93 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo
         title="Gaurav Varma"
         description="I'm a Full Stack Ruby on Rails engineer."
-        canonical={"https://gauravvarma.dev"}
+        canonical={'https://gauravvarma.dev'}
         openGraph={{
-          site_name: "Gaurav Varma",
-          title: "Gaurav Varma",
+          site_name: 'Gaurav Varma',
+          title: 'Gaurav Varma',
           description: "I'm a Full Stack Ruby on Rails engineer.",
           images: [
             {
-              url: "https://www.gauravvarma.dev/gauravvarma.jpg",
+              url: 'https://www.gauravvarma.dev/gauravvarma.jpg',
               width: 100,
               height: 100,
-              alt: "Gaurav Varma Ruby on Rails Developer",
+              alt: 'Gaurav Varma Ruby on Rails Developer',
             },
           ],
         }}
         twitter={{
-          handle: "@gauravvarmaa",
-          site: "@gauravvarmaa",
-          cardType: "summary_large_image",
+          handle: '@gauravvarmaa',
+          site: '@gauravvarmaa',
+          cardType: 'summary_large_image',
         }}
         additionalMetaTags={[
           {
-            name: "application-name",
-            content: "Gaurav Varma",
+            name: 'application-name',
+            content: 'Gaurav Varma',
           },
           {
-            name: "msapplication-TileColor",
-            content: "#ffffff",
+            name: 'msapplication-TileColor',
+            content: '#ffffff',
           },
           {
-            name: "theme-color",
-            content: "#ffffff",
+            name: 'theme-color',
+            content: '#ffffff',
           },
           {
-            name: "apple-mobile-web-app-title",
-            content: "Gaurav Varma",
+            name: 'apple-mobile-web-app-title',
+            content: 'Gaurav Varma',
           },
         ]}
         additionalLinkTags={[
           {
-            rel: "apple-touch-icon",
-            href: "/apple-touch-icon.png",
-            sizes: "180x180",
+            rel: 'apple-touch-icon',
+            href: '/apple-touch-icon.png',
+            sizes: '180x180',
           },
           {
-            rel: "icon",
-            href: "/favicon-32x32.png",
-            sizes: "32x32",
-            type: "image/png",
+            rel: 'icon',
+            href: '/favicon-32x32.png',
+            sizes: '32x32',
+            type: 'image/png',
           },
           {
-            rel: "icon",
-            href: "/favicon-16x16.png",
-            sizes: "16x16",
-            type: "image/png",
+            rel: 'icon',
+            href: '/favicon-16x16.png',
+            sizes: '16x16',
+            type: 'image/png',
           },
           {
-            rel: "manifest",
-            href: "/manifest.webmanifest",
+            rel: 'manifest',
+            href: '/manifest.webmanifest',
           },
           {
-            rel: "mask-icon",
-            href: "/safari-pinned-tab.svg",
-            color: "#000000",
+            rel: 'mask-icon',
+            href: '/safari-pinned-tab.svg',
+            color: '#000000',
           },
           {
-            rel: "apple-touch-icon",
-            href: "/touch-icons/apple-touch-icon-ipad-retina-152x152.png",
+            rel: 'apple-touch-icon',
+            href: '/touch-icons/apple-touch-icon-ipad-retina-152x152.png',
           },
           {
-            rel: "apple-touch-icon",
-            href: "/touch-icons/apple-touch-icon-ipad-76x76.png",
-            sizes: "60x60",
+            rel: 'apple-touch-icon',
+            href: '/touch-icons/apple-touch-icon-ipad-76x76.png',
+            sizes: '60x60',
           },
           {
-            rel: "apple-touch-icon",
-            href: "/touch-icons/apple-touch-icon-ipad-retina-152x152.png",
-            sizes: "144x144",
+            rel: 'apple-touch-icon',
+            href: '/touch-icons/apple-touch-icon-ipad-retina-152x152.png',
+            sizes: '144x144',
           },
           {
-            rel: "apple-touch-icon",
-            href: "/touch-icons/apple-touch-icon-iphone-60x60.png",
-            sizes: "60x60",
+            rel: 'apple-touch-icon',
+            href: '/touch-icons/apple-touch-icon-iphone-60x60.png',
+            sizes: '60x60',
           },
           {
-            rel: "apple-touch-icon",
-            href: "/touch-icons/apple-touch-icon-iphone-retina-120x120.png",
-            sizes: "114x114",
+            rel: 'apple-touch-icon',
+            href: '/touch-icons/apple-touch-icon-iphone-retina-120x120.png',
+            sizes: '114x114',
           },
         ]}
       />

@@ -1,14 +1,14 @@
-import { getAllPosts, getPostBySlug } from "../api/blog";
-import Header from "../../layouts/header";
-import Footer from "../../layouts/footer";
-import MarkdownToHtml from "../../components/markdownToHtml";
-import Link from "next/link";
+import { getAllPosts, getPostBySlug } from '../api/blog';
+import Header from '../../layouts/header';
+import Footer from '../../layouts/footer';
+import MarkdownToHtml from '../../components/markdownToHtml';
+import Link from 'next/link';
 
 export default function Post({ post }) {
-  const prettyDate = new Date(post.createdAt).toLocaleString("en-US", {
-    month: "short",
-    day: "2-digit",
-    year: "numeric",
+  const prettyDate = new Date(post.createdAt).toLocaleString('en-US', {
+    month: 'short',
+    day: '2-digit',
+    year: 'numeric',
   });
 
   return (

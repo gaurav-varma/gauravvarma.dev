@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 function OlderPostsLink(props) {
   const showOlderPostLink = props.showOlderPostLink;
@@ -23,11 +23,11 @@ export default function BlogList({ posts, showOlderPostLink = false }) {
         <div className="col-md-10 col-lg-8 col-xl-8 col-sm-12">
           {posts.map((post) => {
             const prettyDate = new Date(post.createdAt).toLocaleString(
-              "en-US",
+              'en-US',
               {
-                month: "short",
-                day: "2-digit",
-                year: "numeric",
+                month: 'short',
+                day: '2-digit',
+                year: 'numeric',
               }
             );
             return (
