@@ -26,6 +26,6 @@
     "eslint-config-prettier": "^9.0.0"
   },
   "engines": {
-    "node": "16.20.0"
+    "node": "18"
   }
 }
