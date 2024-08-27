@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo';
+import PlausibleProvider from 'next-plausible';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -98,7 +99,14 @@ function MyApp({ Component, pageProps }) {
           },
         ]}
       />
-      <Component {...pageProps} />
+      <PlausibleProvider
+        domain={process.env.NEXT_PUBLIC_REACT_APP_UI_DOMAIN_HOST}
+        selfHosted
+        customDomain={process.env.NEXT_PUBLIC_REACT_APP_API_DOMAIN_HOST}
+        trackOutboundLinks
+      >
+        <Component {...pageProps} />
+      </PlausibleProvider>
     </>
   );
 }
