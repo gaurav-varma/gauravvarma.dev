@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
     <footer className="py-3 my-4">
-      <p className="text-center text-muted fw-light">
+      <p className="text-center fw-light subtext">
         The code for this blog is{' '}
         <a
-          className="text-decoration-underline text-muted fw-light"
+          className="text-decoration-underline fw-light subtext"
           href="https://github.com/gaurav-varma/gauravvarma.dev"
           target="_blank"
           rel="noreferrer"

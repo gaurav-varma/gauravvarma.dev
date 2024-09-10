@@ -6,7 +6,7 @@ function OlderPostsLink(props) {
     return (
       <div className="d-flex justify-content-end mb-4 mt-4">
         <Link href="/blog">
-          <a className="text-uppercase text-decoration-none text-muted fw-light">
+          <a className="text-uppercase text-decoration-none fw-light subtext">
             Older Posts →
           </a>
         </Link>
