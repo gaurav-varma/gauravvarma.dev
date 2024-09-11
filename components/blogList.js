@@ -1,22 +1,6 @@
 import Link from 'next/link';
 
-function OlderPostsLink(props) {
-  const showOlderPostLink = props.showOlderPostLink;
-  if (showOlderPostLink) {
-    return (
-      <div className="d-flex justify-content-end mb-4 mt-4">
-        <Link href="/blog">
-          <a className="text-uppercase text-decoration-none fw-light subtext">
-            Older Posts →
-          </a>
-        </Link>
-      </div>
-    );
-  }
-  return null;
-}
-
-export default function BlogList({ posts, showOlderPostLink = false }) {
+export default function BlogList({ posts }) {
   return (
     <div className="container px-4 px-lg-5">
       <div className="row gx-4 gx-lg-5 justify-content-center">
@@ -47,7 +31,6 @@ export default function BlogList({ posts, showOlderPostLink = false }) {
               </article>
             );
           })}
-          <OlderPostsLink showOlderPostLink={showOlderPostLink} />
         </div>
       </div>
     </div>

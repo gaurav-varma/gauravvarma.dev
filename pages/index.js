@@ -1,6 +1,7 @@
 import Header from '../layouts/header';
 import Footer from '../layouts/footer';
 import BlogList from '../components/blogList';
+import OlderPostsLink from '../components/olderPostsLink';
 import { getAllPosts } from './api/blog';
 
 export default function Home({ posts }) {
@@ -8,7 +9,8 @@ export default function Home({ posts }) {
   return (
     <main>
       <Header></Header>
-      <BlogList posts={recentPosts} showOlderPostLink={true}></BlogList>
+      <BlogList posts={recentPosts}></BlogList>
+      <OlderPostsLink />
       <Footer></Footer>
     </main>
   );
