@@ -1,3 +1,7 @@
 {
-  "extends": ["next", "prettier", "airbnb"]
+  "extends": ["next", "prettier", "airbnb", "plugin:react/jsx-runtime"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-quotes": ["error", "prefer-single"]
+  }
 }
