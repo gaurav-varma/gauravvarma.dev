@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo';
@@ -7,9 +8,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        title="Gaurav Varma"
+        title='Gaurav Varma'
         description="I'm a Full Stack Ruby on Rails engineer."
-        canonical={'https://gauravvarma.dev'}
+        canonical='https://gauravvarma.dev'
         openGraph={{
           site_name: 'Gaurav Varma',
           title: 'Gaurav Varma',
@@ -110,5 +111,14 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
+
+MyApp.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object,
+};
+
+MyApp.defaultProps = {
+  pageProps: {},
+};
 
 export default MyApp;
