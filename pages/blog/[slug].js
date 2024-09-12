@@ -21,12 +21,13 @@ export default function Post({ post }) {
             <article key={post.slug} className='text-center'>
               <div className='post-preview'>
                 <p className='post-back-link mb-4'>
-                  <Link
-                    href='/blog'
-                    className='text-uppercase text-decoration-none text-muted fw-light'
-                    passHref
-                  >
-                    ← BACK TO BLOG
+                  <Link href='/blog' passHref>
+                    <a
+                      href='replace'
+                      className='text-uppercase text-decoration-none text-muted fw-light'
+                    >
+                      ← BACK TO BLOG
+                    </a>
                   </Link>
                 </p>
                 <h1 className='post-title fw-bold'>{post.title}</h1>

@@ -18,12 +18,10 @@ export default function BlogList({ posts }) {
             return (
               <article key={post.slug}>
                 <div className='post-preview'>
-                  <Link
-                    href={post.permalink}
-                    className='post_title_link'
-                    passHref
-                  >
-                    <h4 className='post-title fw-bold'>{post.title}</h4>
+                  <Link href={post.permalink} passHref>
+                    <a href='replace' className='post_title_link'>
+                      <h4 className='post-title fw-bold'>{post.title}</h4>
+                    </a>
                   </Link>
                   <p className='post-subtitle'>{post.excerpt}</p>
                   <p className='post-meta'>
