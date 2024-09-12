@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Header from '../../layouts/header';
 import Footer from '../../layouts/footer';
 import BlogList from '../../components/blogList';
-import { getAllPosts } from '../api/blog';
+import { getAllPosts } from '../../api/blog';
 
 export default function Blog({ posts }) {
   return (

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { getAllPosts, getPostBySlug } from '../api/blog';
+import { getAllPosts, getPostBySlug } from '../../api/blog';
 import Header from '../../layouts/header';
 import Footer from '../../layouts/footer';
 import MarkdownToHtml from '../../components/markdownToHtml';
