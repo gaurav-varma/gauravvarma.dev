@@ -1,24 +1,30 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import PropTypes from 'prop-types';
 
 export default function CodeBlock({ language, value, node }) {
   const getHighlightLine = (lineInput) => {
+    if (!lineInput) return []; // Return an empty array if lineInput is falsy
+
     const lineMeta = lineInput
-      ?.slice(1, -1)
+      .slice(1, -1)
       .split(',')
       .map((line) => {
         if (line.indexOf('-') !== -1) {
           const lineSize = line.split('-');
-          let lines = [];
-          for (let i = parseInt(lineSize[0]); i <= parseInt(lineSize[1]); i++) {
+          const lines = [];
+          for (
+            let i = parseInt(lineSize[0], 10);
+            i <= parseInt(lineSize[1], 10);
+            i += 1
+          ) {
             lines.push(i);
           }
           return lines;
-        } else {
-          return parseInt(line);
         }
+        return parseInt(line, 10);
       });
-    return [].concat.apply([], lineMeta);
+    return [].concat(...lineMeta);
   };
 
   const highlightData = getHighlightLine(node.meta);
@@ -40,7 +46,7 @@ export default function CodeBlock({ language, value, node }) {
   };
 
   return (
-    <div className="relative transition-all duration-100 ease-in-out group codeblock clipboard">
+    <div className='relative transition-all duration-100 ease-in-out group codeblock clipboard'>
       <SyntaxHighlighter
         lineProps={highlightLine}
         showLineNumbers
@@ -53,3 +59,11 @@ export default function CodeBlock({ language, value, node }) {
     </div>
   );
 }
+
+CodeBlock.propTypes = {
+  language: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  node: PropTypes.shape({
+    meta: PropTypes.string,
+  }).isRequired,
+};
