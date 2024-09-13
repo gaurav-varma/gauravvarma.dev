@@ -24,8 +24,20 @@ export default function BlogList({ posts }) {
                     </a>
                   </Link>
                   <p className='post-subtitle'>{post.excerpt}</p>
-                  <p className='post-meta'>
-                    <time dateTime={post.createdAt}>{prettyDate}</time>
+                  <p className='post-meta d-flex'>
+                    <time className='' dateTime={post.createdAt}>
+                      {prettyDate}
+                    </time>
+                    <span className='ms-auto'>
+                      {post.categories.map((category) => (
+                        <span
+                          key={category}
+                          className='px-3 py-2 mx-1 badge rounded-pill bg-dark'
+                        >
+                          {category}
+                        </span>
+                      ))}
+                    </span>
                   </p>
                 </div>
                 <hr className='my-4' />
@@ -46,6 +58,7 @@ BlogList.propTypes = {
       title: PropTypes.string.isRequired,
       excerpt: PropTypes.string.isRequired,
       createdAt: PropTypes.string.isRequired,
+      categories: PropTypes.arrayOf(PropTypes.string).isRequired,
     }),
   ).isRequired,
 };

@@ -12,13 +12,14 @@ export function getPostBySlug(slug) {
   const { content, data } = matter(file);
   const body = content.toString();
   const permalink = `/blog/${slug}`;
-  const { createdAt } = data;
+  const { createdAt, categories } = data;
   return {
     ...data,
     body,
     slug,
     permalink,
     createdAt,
+    categories,
   };
 }
 

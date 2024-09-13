@@ -25,6 +25,7 @@ Home.propTypes = {
       title: PropTypes.string.isRequired,
       excerpt: PropTypes.string.isRequired,
       createdAt: PropTypes.string.isRequired,
+      categories: PropTypes.arrayOf(PropTypes.string).isRequired,
     }),
   ).isRequired,
 };
