@@ -38,7 +38,7 @@ export const findAllCategoryNames = () => {
 };
 
 // Find all posts for a category with count
-export function findAllCategoryPostsBySlug(category) {
+export function findAllCategoryPosts(category) {
   const result = {
     name: category,
     slug: slugify(category),
@@ -47,7 +47,7 @@ export function findAllCategoryPostsBySlug(category) {
   };
 
   getAllPosts().forEach((post) => {
-    if (post.categories.map((c) => slugify(c)).includes(category)) {
+    if (post.categories.includes(category)) {
       result.postCount += 1;
       result.posts.push(post);
     }
