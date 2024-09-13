@@ -12,10 +12,10 @@ export default function Category({ category }) {
       <div className='container px-4 px-lg-5'>
         <div className='row gx-4 gx-lg-5 justify-content-center'>
           <div className='col-md-10 col-lg-8 col-xl-8 col-sm-12'>
-            <p className='text-center'>
-              {`Gaurav has written ${category.postCount} Blog${category.postCount > 1 ? 's' : ''} in ${category.name} category.`}
-            </p>
-            <hr className='my-4' />
+            <h4 className='text-center'>
+              {`Gaurav has written ${category.postCount} blog${category.postCount > 1 ? 's' : ''} in ${category.name} category.`}
+            </h4>
+            <hr className='my-5' />
           </div>
         </div>
       </div>
