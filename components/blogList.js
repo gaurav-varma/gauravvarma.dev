@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import slugify from '../utils/slugify';
 
 export default function BlogList({ posts }) {
   return (
@@ -30,12 +31,17 @@ export default function BlogList({ posts }) {
                     </time>
                     <span className='ms-auto'>
                       {post.categories.map((category) => (
-                        <span
-                          key={category}
-                          className='px-3 py-2 mx-1 badge rounded-pill bg-dark'
+                        <Link
+                          href={`/blog/categories/${slugify(category)}`}
+                          passHref
                         >
-                          {category}
-                        </span>
+                          <span
+                            key={category}
+                            className='px-3 py-2 mx-1 badge rounded-pill bg-dark'
+                          >
+                            {category}
+                          </span>
+                        </Link>
                       ))}
                     </span>
                   </p>
