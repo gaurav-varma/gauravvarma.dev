@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { findAllCategoryNames, findAllCategoryPosts } from '../../../api/blog';
@@ -7,6 +8,12 @@ import Footer from '../../../layouts/footer';
 import BlogList from '../../../components/blogList';
 
 export default function Category({ category }) {
+  const [postsToShow, setPostsToShow] = useState(5);
+
+  const loadMorePosts = () => {
+    setPostsToShow((prevValue) => prevValue + 5);
+  };
+
   return (
     <main>
       <Header />
@@ -30,7 +37,18 @@ export default function Category({ category }) {
           </div>
         </div>
       </div>
-      <BlogList posts={category.posts} />
+      <BlogList posts={category.posts.slice(0, postsToShow)} />
+      <div className='mt-8 mx-auto justify-center text-center'>
+        {postsToShow < category.posts.length && (
+          <button
+            onClick={loadMorePosts}
+            type='button'
+            className='btn btn-dark rounded'
+          >
+            Load more
+          </button>
+        )}
+      </div>
       <Footer />
     </main>
   );
