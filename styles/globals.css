@@ -59,6 +59,12 @@ p {
   font-size: 12px !important;
 }
 
+.post-meta .badge:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(66, 70, 73) !important;
+  border-color: #dee2e6 !important;
+}
+
 .post-back-link a {
   font-size: 14px;
   color: rgb(139, 148, 158) !important;

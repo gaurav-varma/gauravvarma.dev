@@ -35,12 +35,14 @@ export default function BlogList({ posts }) {
                           href={`/blog/categories/${slugify(category)}`}
                           passHref
                         >
-                          <span
-                            key={category}
-                            className='px-3 py-2 mx-1 badge rounded-pill bg-dark'
-                          >
-                            {category}
-                          </span>
+                          <a href='replace'>
+                            <span
+                              key={category}
+                              className='px-3 py-2 mx-1 badge rounded-pill bg-dark'
+                            >
+                              {category}
+                            </span>
+                          </a>
                         </Link>
                       ))}
                     </span>
