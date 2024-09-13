@@ -1,3 +1,14 @@
 {
-  "extends": ["next", "prettier"]
+  "extends": ["next", "prettier", "airbnb", "plugin:react/jsx-runtime"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/forbid-prop-types": [0, {}],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "exceptions": ["Component"]
+      }
+    ]
+  }
 }

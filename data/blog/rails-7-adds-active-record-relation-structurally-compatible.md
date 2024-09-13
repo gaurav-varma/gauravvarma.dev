@@ -1,7 +1,10 @@
 ---
 title: Rails 7 adds ActiveRecord::Relation#structurally_compatible?
-createdAt: "2021-09-12"
+createdAt: '2021-09-12'
 excerpt: ActiveRecord is one of the most powerful features in Rails. With ActiveRecord we can easily query and handle database objects without writing any SQL...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 [ActiveRecord](https://guides.rubyonrails.org/active_record_querying.html) is
@@ -31,6 +34,7 @@ compatible. We can use this method before we run `and` or `or` query methods on
 any two relations.
 
 Let's assume we have two models `Blog` and `Post` with the following relations
+
 ```ruby
 # app/models/blog.rb
 class Blog < ApplicationRecord

@@ -1,7 +1,10 @@
 ---
 title: Rails 7 Adds from option to ActiveSupport::TestCase#assert_no_changes
-createdAt: "2021-11-19"
+createdAt: '2021-11-19'
 excerpt: Rails Active Support provides various extensions, utilities, and helpers. It provides a collection of utility classes...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 Rails
