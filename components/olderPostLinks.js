@@ -6,7 +6,7 @@ export default function OlderPostsLinks() {
       <div className='row gx-4 gx-lg-5 justify-content-center'>
         <div className='col-md-10 col-lg-8 col-xl-8 col-sm-12'>
           <div className='d-flex mb-4 mt-4'>
-            <Link href='/blog/categories/all' passHref>
+            <Link href='/blog/categories' passHref>
               <a
                 href='replace'
                 className='text-uppercase text-decoration-none fw-light subtext'

@@ -17,7 +17,7 @@ export default function Category({ category }) {
               <h4 className='text-left'>
                 {`${category.name} Blog${category.postCount > 1 ? 's' : ''}`}
               </h4>
-              <Link href='/blog/categories/all' passHref>
+              <Link href='/blog/categories' passHref>
                 <a href='replace' className='btn btn-dark rounded ms-auto'>
                   View All Categories
                 </a>

@@ -5,7 +5,7 @@ import Footer from '../../../layouts/footer';
 import { findAllCategoryNames, findAllCategoryPosts } from '../../../api/blog';
 import CategoryList from '../../../components/categoryList';
 
-export default function All({ categories }) {
+export default function Categories({ categories }) {
   return (
     <div className='container px-4 px-lg-5'>
       <div className='row gx-4 gx-lg-5 justify-content-center'>
@@ -28,7 +28,7 @@ export default function All({ categories }) {
   );
 }
 
-All.propTypes = {
+Categories.propTypes = {
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       slug: PropTypes.string.isRequired,
