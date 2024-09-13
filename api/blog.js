@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
+import slugify from '../utils/slugify';
 
 const postsDirectory = join(process.cwd(), 'data/blog');
 
@@ -28,4 +29,29 @@ export function getAllPosts() {
   return filenames
     .map((filename) => getPostBySlug(filename.replace(/\.md$/, '')))
     .sort((post1, post2) => (post1.createdAt > post2.createdAt ? -1 : 1));
+}
+
+// // Find all unique categories
+export const findAllCategoryNames = () => {
+  const categoryNames = getAllPosts().map((post) => post.categories);
+  return [...new Set(categoryNames.flat())];
+};
+
+// Find all posts for a category with count
+export function findAllCategoryPostsBySlug(category) {
+  const result = {
+    name: category,
+    slug: slugify(category),
+    postCount: 0,
+    posts: [],
+  };
+
+  getAllPosts().forEach((post) => {
+    if (post.categories.map((c) => slugify(c)).includes(category)) {
+      result.postCount += 1;
+      result.posts.push(post);
+    }
+  });
+
+  return result;
 }
