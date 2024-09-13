@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Header from '../layouts/header';
 import Footer from '../layouts/footer';
 import BlogList from '../components/blogList';
-import OlderPostsLink from '../components/olderPostsLink';
+import OlderPostsLinks from '../components/olderPostLinks';
 import { getAllPosts } from '../api/blog';
 
 export default function Home({ posts }) {
@@ -11,7 +11,7 @@ export default function Home({ posts }) {
     <main>
       <Header />
       <BlogList posts={recentPosts} />
-      <OlderPostsLink />
+      <OlderPostsLinks />
       <Footer />
     </main>
   );

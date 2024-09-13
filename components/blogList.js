@@ -25,6 +25,7 @@ export default function BlogList({ posts }) {
                     {post.categories.map((category) => (
                       <Link
                         href={`/blog/categories/${slugify(category)}`}
+                        key={slugify(category)}
                         passHref
                       >
                         <a href='replace'>
