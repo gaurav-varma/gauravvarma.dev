@@ -12,8 +12,8 @@ export default function Categories({ categories }) {
         <div className='col-md-10 col-lg-8 col-xl-8 col-sm-12'>
           <Header />
           <div className='d-flex'>
-            <h4 className='text-left'>Categories</h4>
-            <Link href='/blog' passHref>
+            <h4 className='text-left'>All Categories</h4>
+            <Link href='/blog/all' passHref>
               <a href='replace' className='btn btn-dark rounded ms-auto'>
                 View All Blogs
               </a>

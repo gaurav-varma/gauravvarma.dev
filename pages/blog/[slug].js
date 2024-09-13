@@ -16,7 +16,7 @@ export default function Post({ post }) {
             <article key={post.slug} className='text-center'>
               <div className='post-preview'>
                 <p className='post-back-link mb-4'>
-                  <Link href='/blog' passHref>
+                  <Link href='/blog/all' passHref>
                     <a
                       href='replace'
                       className='text-uppercase text-decoration-none text-muted fw-light'

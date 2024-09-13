@@ -14,7 +14,7 @@ export default function OlderPostsLinks() {
                 View All Categories
               </a>
             </Link>
-            <Link href='/blog' passHref>
+            <Link href='/blog/all' passHref>
               <a
                 href='replace'
                 className='text-uppercase text-decoration-none fw-light subtext ms-auto'

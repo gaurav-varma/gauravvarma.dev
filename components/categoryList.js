@@ -6,7 +6,7 @@ export default function CategoryList({ categories }) {
     <div className='container px-4'>
       <div className='row row-cols-1 row-cols-xs-1 row-cols-md-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4'>
         {categories.map((category) => (
-          <div className='col'>
+          <div className='col' key={category.slug}>
             <Link href={`/blog/categories/${category.slug}`} passHref>
               <a href='replace' className='text-decoration-none category-card'>
                 <div className='card text-white bg-dark mb-3 category-card'>
