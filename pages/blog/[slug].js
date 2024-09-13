@@ -4,14 +4,9 @@ import { getAllPosts, getPostBySlug } from '../../api/blog';
 import Header from '../../layouts/header';
 import Footer from '../../layouts/footer';
 import MarkdownToHtml from '../../components/markdownToHtml';
+import prettyDate from '../../utils/date';
 
 export default function Post({ post }) {
-  const prettyDate = new Date(post.createdAt).toLocaleString('en-US', {
-    month: 'short',
-    day: '2-digit',
-    year: 'numeric',
-  });
-
   return (
     <main>
       <Header />
@@ -32,7 +27,9 @@ export default function Post({ post }) {
                 </p>
                 <h1 className='post-title fw-bold'>{post.title}</h1>
                 <p className='post-meta mt-4  mb-0'>
-                  <time dateTime={post.createdAt}>{prettyDate}</time>
+                  <time dateTime={post.createdAt}>
+                    {prettyDate(post.createdAt)}
+                  </time>
                 </p>
               </div>
             </article>
