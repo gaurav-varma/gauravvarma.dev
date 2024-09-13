@@ -1,7 +1,10 @@
 ---
 title: Rails 7 replaced byebug with ruby/debug
-createdAt: "2021-11-09"
+createdAt: '2021-11-09'
 excerpt: Rails 5 introduced byebug which is an easy-to-use, feature-rich ruby debugger. It offers features like Stepping, Breaking, Evaluating, Tracking...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 Rails 5 introduced [byebug](https://github.com/deivid-rodriguez/byebug) which is

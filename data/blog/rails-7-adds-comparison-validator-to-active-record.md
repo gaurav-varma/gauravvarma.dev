@@ -1,7 +1,10 @@
 ---
 title: Rails 7 adds ComparisonValidator to ActiveRecord
-createdAt: "2021-10-05"
+createdAt: '2021-10-05'
 excerpt: ActiveRecord is one of the most powerful features in Rails. With ActiveRecord we can easily query and handle database objects without writing any SQL...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 Rails

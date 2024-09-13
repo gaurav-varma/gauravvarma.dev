@@ -1,7 +1,10 @@
 ---
 title: Rails 7 adds ActiveRecord::Base#previously_persisted?
-createdAt: "2021-11-09"
+createdAt: '2021-11-09'
 excerpt: Active Record in Rails provides various methods like exists?, persisted?, destroyed? and many more...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 [Active Record](https://api.rubyonrails.org/v6.1.4/classes/ActiveRecord/Persistence.html)

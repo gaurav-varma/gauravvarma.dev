@@ -1,7 +1,10 @@
 ---
 title: Rails 7 adds the ability to use pre-defined variants
-createdAt: "2021-10-19"
+createdAt: '2021-10-19'
 excerpt: Rails 5.2 introduced ActiveStorage which made it possible to easily upload files to a cloud storage service like Amazon S3, Google Cloud Storage, or Microsoft Azure...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 Rails 5.2 introduced

@@ -1,7 +1,10 @@
 ---
 title: Rails 7 adds weekday_options_for_select and weekday_select
-createdAt: "2021-11-09"
+createdAt: '2021-11-09'
 excerpt: In web applications, forms are one of the most essential interfaces for user input and it can be tedious to write...
+categories:
+  - Rails
+  - Rails 7
 ---
 
 In web applications, forms are one of the most essential interfaces for user
