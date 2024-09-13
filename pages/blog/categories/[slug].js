@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import { findAllCategoryNames, findAllCategoryPosts } from '../../../api/blog';
 import slugify from '../../../utils/slugify';
 import Header from '../../../layouts/header';
@@ -12,9 +13,19 @@ export default function Category({ category }) {
       <div className='container px-4 px-lg-5'>
         <div className='row gx-4 gx-lg-5 justify-content-center'>
           <div className='col-md-10 col-lg-8 col-xl-8 col-sm-12'>
-            <h4 className='text-center'>
+            <div className='d-flex'>
+              <h4 className='text-left'>
+                {`${category.name} Blog${category.postCount > 1 ? 's' : ''}`}
+              </h4>
+              <Link href='/blog/categories/all' passHref>
+                <a href='replace' className='btn btn-dark rounded ms-auto'>
+                  View All Categories
+                </a>
+              </Link>
+            </div>
+            <p className='text-left'>
               {`Gaurav has written ${category.postCount} blog${category.postCount > 1 ? 's' : ''} in ${category.name} category.`}
-            </h4>
+            </p>
             <hr className='my-5' />
           </div>
         </div>
