@@ -10,5 +10,8 @@
         "exceptions": ["Component"]
       }
     ]
+  },
+  "env": {
+    "jest": true
   }
 }
