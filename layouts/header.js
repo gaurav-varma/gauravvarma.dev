@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='d-flex justify-content-center py-3'>
+    <header className='d-flex justify-content-center py-3' data-testid='header'>
       <Link href='/' passHref>
         <div className='my-5 text-center headshot'>
           <Image

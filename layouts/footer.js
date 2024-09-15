@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='py-3 my-4'>
+    <footer className='py-3 my-4' data-testid='footer'>
       <p className='text-center fw-light subtext'>
         The code for this blog is
         {' '}
