@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 export default function CategoryList({ categories }) {
   return (
     <div className='container px-4'>
-      <div className='row row-cols-1 row-cols-xs-1 row-cols-md-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4'>
+      <div
+        className='row row-cols-1 row-cols-xs-1 row-cols-md-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4'
+        data-testid='category-list'
+      >
         {categories.map((category) => (
           <div className='col' key={category.slug}>
             <Link href={`/blog/categories/${category.slug}`} passHref>

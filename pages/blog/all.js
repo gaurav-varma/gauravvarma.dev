@@ -22,7 +22,11 @@ export default function All({ posts }) {
             <div className='d-flex'>
               <h4 className='text-left'>All Blogs</h4>
               <Link href='/blog/categories' passHref>
-                <a href='replace' className='btn btn-dark rounded ms-auto'>
+                <a
+                  href='replace'
+                  className='btn btn-dark rounded ms-auto'
+                  data-testid='view-all-categories-link'
+                >
                   View All Categories
                 </a>
               </Link>
@@ -38,6 +42,7 @@ export default function All({ posts }) {
             onClick={loadMorePosts}
             type='button'
             className='btn btn-dark rounded'
+            data-testid='load-more-link'
           >
             Load more
           </button>
