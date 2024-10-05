@@ -19,6 +19,7 @@ describe('The Home Page', () => {
     expect(screen.getByTestId('header')).toBeInTheDocument();
     expect(screen.getByTestId('blog-list')).toBeInTheDocument();
     expect(screen.getByTestId('older-posts-links')).toBeInTheDocument();
+    expect(screen.getByText('View All Categories')).toBeInTheDocument();
     expect(screen.getByTestId('footer')).toBeInTheDocument();
   });
 
