@@ -43,7 +43,7 @@ end
 
 ### Links
 
-- [PR #31134 - adds redis_cache_store](https://github.com/rails/rails/pull/31134)
+- [PR #31134 - Adds Built-in Redis cache store](https://github.com/rails/rails/pull/31134)
 - [Rails documentation for Redis Cache Store](https://api.rubyonrails.org/v5.2/classes/ActiveSupport/Cache/RedisCacheStore.html)
 
 ### Summary
