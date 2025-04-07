@@ -22,25 +22,14 @@ This 1.0 milestone marks Kamal as a **production-ready**, opinionated solution f
 
 ### Why Kamal over other tools?
 
-**Tool: Capistrano**
-
-- Pros: Time-tested, SSH-based
-- Cons: No container support, slow
-
-**Tool: Kubernetes**
-
-- Pros: Scalable, cloud-native
-- Cons: Overkill for most Rails apps
-
-**Tool: Heroku**
-
-- Pros: Super simple
-- Cons: Vendor lock-in, expensive
-
-**Tool: Kamal**
-
-- Pros: Simple, Docker-native, zero-downtime
-- Cons: Self-hosting required
+```
+Tool         | Pros                                 | Cons
+-------------|--------------------------------------|-----------------------------
+Capistrano   | Time-tested, SSH-based               | No container support, slow
+Kubernetes   | Scalable, cloud-native               | Overkill for most Rails apps
+Heroku       | Super simple                         | Vendor lock-in, expensive
+Kamal        | Simple, Docker-native, zero-downtime | Self-hosting required
+```
 
 Kamal aims to **strike the balance** — giving you full control and performance without giving up simplicity.
 
