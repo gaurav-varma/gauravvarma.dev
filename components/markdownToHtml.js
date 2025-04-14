@@ -5,7 +5,11 @@ import CodeBlock from './codeBlock';
 
 export default function MarkdownToHtml({ content }) {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm]} renderers={{ code: CodeBlock }}>
+    <ReactMarkdown
+      linkTarget='_blank'
+      remarkPlugins={[remarkGfm]}
+      renderers={{ code: CodeBlock }}
+    >
       {content}
     </ReactMarkdown>
   );
