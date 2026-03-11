@@ -8,7 +8,7 @@ categories:
   - Performance
 ---
 
-Rails 8 introduces **Solid Queue**, a new database-backed backend for Active Job that allows background jobs to run without Redis, Sidekiq, or external queue systems. Solid Queue works well with other database-powered Rails infrastructure like [Solid Cache](../rails-8-adds-solid-cache-for-built-in-html-fragment-caching) and [Solid Cable](../rails-8-adds-solid-cable-for-built-in-websocket-pub-sub-support), and it underpins newer features such as [Active Job Continuations](../rails-8-1-introduces-active-job-continuations).
+Rails 8 introduces **Solid Queue**, a new database-backed backend for Active Job that allows background jobs to run without Redis, Sidekiq, or external queue systems. Solid Queue works well with other database-powered Rails infrastructure like [Solid Cache](/blog/rails-8-adds-solid-cache-for-built-in-html-fragment-caching) and [Solid Cable](/blog/rails-8-adds-solid-cable-for-built-in-websocket-pub-sub-support), and it underpins newer features such as [Active Job Continuations](/blog/rails-8-1-introduces-active-job-continuations).
 
 Background jobs are essential for modern applications. Tasks like sending emails, processing uploads, or performing analytics often run asynchronously to keep web requests fast.
 

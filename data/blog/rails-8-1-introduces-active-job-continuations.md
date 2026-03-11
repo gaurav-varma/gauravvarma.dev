@@ -8,7 +8,7 @@ categories:
   - Background
 ---
 
-Rails 8.1 introduces **Active Job Continuations**, a new feature that allows background jobs to pause execution and resume later while maintaining their internal state. Rails 8 background jobs now commonly run on [Solid Queue](../rails-8-adds-solid-queue-for-built-in-background-jobs), and continuations pair well with [Structured Event Reporting](../rails-8-1-adds-structured-event-reporting) for tracking multi-step workflows.
+Rails 8.1 introduces **Active Job Continuations**, a new feature that allows background jobs to pause execution and resume later while maintaining their internal state. Rails 8 background jobs now commonly run on [Solid Queue](/blog/rails-8-adds-solid-queue-for-built-in-background-jobs), and continuations pair well with [Structured Event Reporting](/blog/rails-8-1-adds-structured-event-reporting) for tracking multi-step workflows.
 
 Many background tasks require multiple steps or depend on external events. Previously, developers often had to break these workflows into separate jobs and manually manage state between them.
 

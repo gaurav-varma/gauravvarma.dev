@@ -12,7 +12,7 @@ Ruby 3.4 introduces several improvements to **YJIT**, Ruby’s just-in-time comp
 
 YJIT was first introduced to bring better runtime performance to Ruby without requiring major changes to application code. With Ruby 3.4, the YJIT engine becomes faster, more memory-efficient, and more stable.
 
-These improvements continue Ruby’s long-term effort to make the language competitive with other high-performance runtimes while preserving its simplicity. Ruby 4.0 continues this work with the new [ZJIT compiler](../ruby-4-0-introduces-zjit-and-ruby-box-isolated-namespaces) and further [Ractor](../ruby-4-0-revamps-concurrency-with-ractor-improvements) enhancements.
+These improvements continue Ruby’s long-term effort to make the language competitive with other high-performance runtimes while preserving its simplicity. Ruby 4.0 continues this work with the new [ZJIT compiler](/blog/ruby-4-0-introduces-zjit-and-ruby-box-isolated-namespaces) and further [Ractor](/blog/ruby-4-0-revamps-concurrency-with-ractor-improvements) enhancements.
 
 ---
 

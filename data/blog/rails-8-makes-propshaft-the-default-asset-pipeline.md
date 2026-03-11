@@ -40,7 +40,7 @@ Sprockets historically handled many responsibilities:
 
 Modern JavaScript ecosystems already solve these problems with specialized tooling.
 
-Propshaft removes this duplication and allows Rails apps to integrate cleanly with modern frontend tools. Modern Rails applications also benefit from new database-backed infrastructure like [Solid Cache](../rails-8-adds-solid-cache-for-built-in-html-fragment-caching) for caching and [Solid Queue](../rails-8-adds-solid-queue-for-built-in-background-jobs) for background jobs.
+Propshaft removes this duplication and allows Rails apps to integrate cleanly with modern frontend tools. Modern Rails applications also benefit from new database-backed infrastructure like [Solid Cache](/blog/rails-8-adds-solid-cache-for-built-in-html-fragment-caching) for caching and [Solid Queue](/blog/rails-8-adds-solid-queue-for-built-in-background-jobs) for background jobs.
 
 Benefits include:
 

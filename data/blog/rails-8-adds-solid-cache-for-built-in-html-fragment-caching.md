@@ -8,7 +8,7 @@ categories:
   - Performance
 ---
 
-Rails 8 introduces **Solid Cache**, a new caching backend designed to store cached data directly in your application database. Rails 8 also ships related database-backed infrastructure like [Solid Queue](../rails-8-adds-solid-queue-for-built-in-background-jobs) for background jobs and [Solid Cable](../rails-8-adds-solid-cable-for-built-in-websocket-pub-sub-support) for real-time messaging.
+Rails 8 introduces **Solid Cache**, a new caching backend designed to store cached data directly in your application database. Rails 8 also ships related database-backed infrastructure like [Solid Queue](/blog/rails-8-adds-solid-queue-for-built-in-background-jobs) for background jobs and [Solid Cable](/blog/rails-8-adds-solid-cable-for-built-in-websocket-pub-sub-support) for real-time messaging.
 
 Caching has always been a critical part of building fast Rails applications. Traditionally, Rails apps relied on external systems like **Redis or Memcached** to store cached fragments, query results, and other temporary data.
 

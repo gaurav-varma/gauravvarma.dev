@@ -12,7 +12,7 @@ Ruby 3.4 introduces support for **Happy Eyeballs Version 2** in the standard soc
 
 Many modern networks expose both address types, but establishing a connection can sometimes be slow if the system tries one protocol first and it fails or stalls. Happy Eyeballs solves this by attempting connections in parallel.
 
-With this addition, Ruby applications that open outbound connections—such as HTTP clients, API integrations, and microservices—can establish connections more quickly and reliably. These networking improvements complement runtime work in [YJIT](../ruby-3-4-optimizes-yjit-for-better-performance) and concurrency features like [Ractors](../ruby-4-0-revamps-concurrency-with-ractor-improvements).
+With this addition, Ruby applications that open outbound connections—such as HTTP clients, API integrations, and microservices—can establish connections more quickly and reliably. These networking improvements complement runtime work in [YJIT](/blog/ruby-3-4-optimizes-yjit-for-better-performance) and concurrency features like [Ractors](/blog/ruby-4-0-revamps-concurrency-with-ractor-improvements).
 
 ---
 

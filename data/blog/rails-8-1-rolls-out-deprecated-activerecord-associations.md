@@ -8,7 +8,7 @@ categories:
   - ActiveRecord
 ---
 
-Rails 8.1 introduces **deprecated ActiveRecord associations**, allowing developers to mark associations as deprecated before removing them from an application. This feature pairs well with documentation rendered via [native Markdown views](../rails-8-1-adds-native-markdown-rendering) and with background workflows modeled using [Active Job Continuations](../rails-8-1-introduces-active-job-continuations).
+Rails 8.1 introduces **deprecated ActiveRecord associations**, allowing developers to mark associations as deprecated before removing them from an application. This feature pairs well with documentation rendered via [native Markdown views](/blog/rails-8-1-adds-native-markdown-rendering) and with background workflows modeled using [Active Job Continuations](/blog/rails-8-1-introduces-active-job-continuations).
 
 Large Rails applications often evolve over time. As models change, some associations become outdated or unnecessary. Removing them immediately can break existing code or integrations.
 

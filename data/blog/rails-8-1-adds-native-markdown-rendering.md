@@ -8,7 +8,7 @@ categories:
   - Rendering
 ---
 
-Rails 8.1 introduces **native Markdown rendering**, allowing controllers to respond directly to the `md` format. Markdown-based views fit naturally alongside modern asset handling with [Propshaft](../rails-8-makes-propshaft-the-default-asset-pipeline) and can be used to document features instrumented with [Structured Event Reporting](../rails-8-1-adds-structured-event-reporting).
+Rails 8.1 introduces **native Markdown rendering**, allowing controllers to respond directly to the `md` format. Markdown-based views fit naturally alongside modern asset handling with [Propshaft](/blog/rails-8-makes-propshaft-the-default-asset-pipeline) and can be used to document features instrumented with [Structured Event Reporting](/blog/rails-8-1-adds-structured-event-reporting).
 
 Markdown is widely used for documentation, developer portals, and content-heavy applications. Before Rails 8.1, developers typically needed external libraries or custom rendering logic to support Markdown responses.
 

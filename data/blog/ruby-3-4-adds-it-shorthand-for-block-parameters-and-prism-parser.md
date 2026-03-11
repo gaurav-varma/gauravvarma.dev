@@ -7,7 +7,7 @@ categories:
   - Ruby 3.4
 ---
 
-Ruby 3.4 introduces two notable improvements to the language: a new **`it` shorthand for block parameters** and the adoption of **Prism as the default Ruby parser**. In parallel, Ruby continues to invest in runtime performance with updates to [YJIT](../ruby-3-4-optimizes-yjit-for-better-performance) and the upcoming [ZJIT compiler](../ruby-4-0-introduces-zjit-and-ruby-box-isolated-namespaces).
+Ruby 3.4 introduces two notable improvements to the language: a new **`it` shorthand for block parameters** and the adoption of **Prism as the default Ruby parser**. In parallel, Ruby continues to invest in runtime performance with updates to [YJIT](/blog/ruby-3-4-optimizes-yjit-for-better-performance) and the upcoming [ZJIT compiler](/blog/ruby-4-0-introduces-zjit-and-ruby-box-isolated-namespaces).
 
 These updates improve both the developer experience and the internal architecture of Ruby.
 

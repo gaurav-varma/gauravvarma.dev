@@ -69,7 +69,7 @@ This returns the value without exposing the entire credentials file.
 
 ### Integration with Kamal
 
-Deployment tools such as **Kamal** can now retrieve secrets during deployment, especially when combined with registry-free workflows from [Rails 8.1 Kamal deployments](../rails-8-1-enables-registry-free-kamal-deployments).
+Deployment tools such as **Kamal** can now retrieve secrets during deployment, especially when combined with registry-free workflows from [Rails 8.1 Kamal deployments](/blog/rails-8-1-enables-registry-free-kamal-deployments).
 
 Example workflow:
 

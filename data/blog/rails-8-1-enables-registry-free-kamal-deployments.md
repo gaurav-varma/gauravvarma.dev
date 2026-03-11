@@ -62,7 +62,7 @@ Because the image is transferred directly over SSH, **a remote registry is no lo
 
 ### Example deployment
 
-Deploying with Kamal remains straightforward, and can securely fetch secrets at deploy time using [rails credentials:fetch](../rails-8-1-supports-command-line-credentials-fetching-for-kamal).
+Deploying with Kamal remains straightforward, and can securely fetch secrets at deploy time using [rails credentials:fetch](/blog/rails-8-1-supports-command-line-credentials-fetching-for-kamal).
 
 ```bash
 kamal deploy

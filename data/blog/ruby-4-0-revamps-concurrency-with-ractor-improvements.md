@@ -8,7 +8,7 @@ categories:
   - Concurrency
 ---
 
-Ruby 4.0 introduces several improvements to **Ractors**, Ruby’s concurrency model designed for safe parallel execution without shared mutable state. These changes complement Ruby’s JIT work in [YJIT](../ruby-3-4-optimizes-yjit-for-better-performance) and [ZJIT](../ruby-4-0-introduces-zjit-and-ruby-box-isolated-namespaces) to improve both concurrency and raw performance.
+Ruby 4.0 introduces several improvements to **Ractors**, Ruby’s concurrency model designed for safe parallel execution without shared mutable state. These changes complement Ruby’s JIT work in [YJIT](/blog/ruby-3-4-optimizes-yjit-for-better-performance) and [ZJIT](/blog/ruby-4-0-introduces-zjit-and-ruby-box-isolated-namespaces) to improve both concurrency and raw performance.
 
 The update includes a new abstraction called **Ractor::Port**, which simplifies communication between Ractors.
 

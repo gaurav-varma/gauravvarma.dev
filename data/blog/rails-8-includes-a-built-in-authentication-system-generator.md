@@ -10,7 +10,7 @@ categories:
 
 Rails 8 introduces a **built-in authentication generator**, giving developers a simple way to add login and session management without relying on external gems.
 
-For many years, Rails applications commonly used libraries like **Devise, Sorcery, or Authlogic** to implement authentication. While powerful, these libraries often add complexity for simple applications. Authentication flows can also emit structured login events using [Structured Event Reporting](../rails-8-1-adds-structured-event-reporting), and run on top of modern Rails infrastructure like [Propshaft](../rails-8-makes-propshaft-the-default-asset-pipeline).
+For many years, Rails applications commonly used libraries like **Devise, Sorcery, or Authlogic** to implement authentication. While powerful, these libraries often add complexity for simple applications. Authentication flows can also emit structured login events using [Structured Event Reporting](/blog/rails-8-1-adds-structured-event-reporting), and run on top of modern Rails infrastructure like [Propshaft](/blog/rails-8-makes-propshaft-the-default-asset-pipeline).
 
 The new Rails authentication generator provides a **secure, minimal starting point** that integrates directly with Rails conventions.
 

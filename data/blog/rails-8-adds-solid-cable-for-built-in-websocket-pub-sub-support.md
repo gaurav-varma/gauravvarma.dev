@@ -8,7 +8,7 @@ categories:
   - Performance
 ---
 
-Rails 8 introduces **Solid Cable**, a new built-in pub/sub backend for Action Cable that removes the need for Redis when building real-time features. Solid Cable works alongside other database-backed infrastructure like [Solid Cache](../rails-8-adds-solid-cache-for-built-in-html-fragment-caching) and [Solid Queue](../rails-8-adds-solid-queue-for-built-in-background-jobs) to reduce external dependencies.
+Rails 8 introduces **Solid Cable**, a new built-in pub/sub backend for Action Cable that removes the need for Redis when building real-time features. Solid Cable works alongside other database-backed infrastructure like [Solid Cache](/blog/rails-8-adds-solid-cache-for-built-in-html-fragment-caching) and [Solid Queue](/blog/rails-8-adds-solid-queue-for-built-in-background-jobs) to reduce external dependencies.
 
 For years, Rails applications relied on **Redis** to power WebSocket broadcasting. While Redis works well, it adds operational overhead for smaller apps and teams. Solid Cable simplifies this by using your **database as the message bus**, allowing developers to run real-time Rails apps without external infrastructure.
 

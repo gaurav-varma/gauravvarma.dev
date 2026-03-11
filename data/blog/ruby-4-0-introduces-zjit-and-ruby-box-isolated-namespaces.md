@@ -8,7 +8,7 @@ categories:
   - Performance
 ---
 
-Ruby 4.0 introduces **ZJIT**, a next-generation just-in-time compiler designed to improve runtime performance. The release also includes **Ruby::Box**, a new feature for creating isolated namespaces within Ruby applications. ZJIT builds on earlier work in [YJIT](../ruby-3-4-optimizes-yjit-for-better-performance) and pairs well with concurrency improvements in [Ractors](../ruby-4-0-revamps-concurrency-with-ractor-improvements).
+Ruby 4.0 introduces **ZJIT**, a next-generation just-in-time compiler designed to improve runtime performance. The release also includes **Ruby::Box**, a new feature for creating isolated namespaces within Ruby applications. ZJIT builds on earlier work in [YJIT](/blog/ruby-3-4-optimizes-yjit-for-better-performance) and pairs well with concurrency improvements in [Ractors](/blog/ruby-4-0-revamps-concurrency-with-ractor-improvements).
 
 Together, these additions represent a significant step forward in Ruby’s performance and modular architecture.
 
