@@ -5,7 +5,7 @@ excerpt: Rails 8.1 introduces native Markdown rendering support, allowing contro
 categories:
   - Rails
   - Rails 8.1
-  - Rendering
+  - Markdown
 ---
 
 Rails 8.1 introduces **native Markdown rendering**, allowing controllers to respond directly to the `md` format. Markdown-based views fit naturally alongside modern asset handling with [Propshaft](/blog/rails-8-makes-propshaft-the-default-asset-pipeline) and can be used to document features instrumented with [Structured Event Reporting](/blog/rails-8-1-adds-structured-event-reporting).
