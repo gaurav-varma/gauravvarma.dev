@@ -6,6 +6,7 @@ categories:
   - Rails
   - Rails 8.1
   - DevOps
+  - Kamal
 ---
 
 Rails 8.1 introduces **command-line credentials fetching**, making it easier for deployment tools like **Kamal** to retrieve encrypted credentials securely during deployment.
