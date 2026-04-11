@@ -372,17 +372,33 @@ a.subtext:hover,
 @media (max-width: 767px) {
   /* ── Structural fixes (pre-existing) ── */
 
-  /* Stack post-meta (date + badges) vertically so badges don't overflow */
+  /* Stack post-meta vertically: badges first, date below right-aligned.
+   * Mirrors desktop logic (date-left / badges-right) but inverted for mobile:
+   * badges = content (left), date = metadata (right corner). */
   .post-meta.d-flex {
     flex-direction: column !important;
-    gap: 8px;
+    gap: 10px;
+    margin-top: 4px;
   }
 
+  /* Badges: come first, left-aligned */
   .post-meta .ms-auto {
+    order: 1;
     margin-left: 0 !important;
     display: flex !important;
     flex-wrap: wrap;
     gap: 6px;
+  }
+
+  /* Date: centered below badges — reads as a quiet timestamp footer to the
+   * post item. Centered feels neutral/editorial, not competing with badges. */
+  .post-meta time {
+    order: 2;
+    align-self: center;
+    margin-top: 6px;
+    font-size: 13px;
+    opacity: 0.6;
+    letter-spacing: 0.03em;
   }
 
   /* Stack page-header rows (h4 title + button) vertically */
@@ -414,9 +430,9 @@ a.subtext:hover,
     margin-bottom: 0.6rem;
   }
 
-  /* Space between subtitle and date/meta */
+  /* Space between subtitle and meta row (badges + date) */
   .post-preview p.post-subtitle {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   /* Separator between posts: increase from my-4 (24px) to 36px
