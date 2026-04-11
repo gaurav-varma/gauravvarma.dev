@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo';
 import PlausibleProvider from 'next-plausible';
+import ThemeToggle from '../components/themeToggle';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -106,6 +107,7 @@ function MyApp({ Component, pageProps }) {
         customDomain={process.env.NEXT_PUBLIC_REACT_APP_API_DOMAIN_HOST}
         trackOutboundLinks
       >
+        <ThemeToggle />
         <Component {...pageProps} />
       </PlausibleProvider>
     </>
