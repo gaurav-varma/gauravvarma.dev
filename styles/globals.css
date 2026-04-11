@@ -58,15 +58,12 @@ body {
 .name {
   font-weight: 500;
   letter-spacing: 0.35px;
+  /* DM Sans = free substitute for ABC Favorit (geometric sans, nav/label role) */
   font-family:
+    'DM Sans',
     ui-sans-serif,
     system-ui,
     -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
     sans-serif;
 }
 
@@ -100,7 +97,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ivar Text', 'Georgia', serif;
+  /* Playfair Display = free substitute for Domaine Display (editorial serif) */
+  font-family: 'Playfair Display', 'Ivar Text', 'Georgia', serif;
   color: var(--text-primary);
 }
 
@@ -188,7 +186,9 @@ p code {
   background-color: var(--inline-code-bg);
   border-radius: 6px;
   color: var(--text-body);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  /* JetBrains Mono = substitute for Commit Mono */
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, monospace;
 }
 
 .markdown-body {
@@ -210,8 +210,15 @@ p code {
 .markdown-body h4,
 .markdown-body h5 {
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  /* DM Sans for section-level headings inside post body */
+  font-family:
+    'DM Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Helvetica,
+    Arial,
+    sans-serif;
   color: var(--text-primary);
 }
 
@@ -377,6 +384,8 @@ a.subtext:hover,
 
   .markdown-body pre code {
     font-size: 13px;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+      Consolas, monospace;
   }
 
   /* Images never overflow their container */
