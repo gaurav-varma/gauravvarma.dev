@@ -1,33 +1,46 @@
 :root {
-  --bg: #000000;
-  --text-primary: #f0f0f0;
-  --text-secondary: #a1a4a5;
-  --text-muted: rgb(139, 148, 158);
-  --text-body: rgb(201, 209, 217);
-  --border-frost: rgba(214, 235, 253, 0.19);
-  --border-frost-alt: rgba(217, 237, 254, 0.145);
-  --link: rgb(88, 166, 255);
-  --code-bg: rgb(22, 27, 34);
+  /* Dark mode — GitHub Dark palette
+   * #0d1117 vs pure black: ~13:1 contrast ratio instead of ~17:1.
+   * Eliminates halation (white-on-black glow) while staying very readable.
+   * Subtle blue tint reads as "technical" to developers. */
+  --bg: #0d1117;
+  --text-primary: #e6edf3; /* GitHub dark primary — soft near-white, no eye strain */
+  --text-secondary: #8b949e; /* GitHub dark secondary */
+  --text-muted: #8b949e;
+  --text-body: #c9d1d9; /* GitHub dark body — slightly muted, ideal for paragraphs */
+  --border-frost: rgba(
+    214,
+    235,
+    253,
+    0.22
+  ); /* slightly more visible on off-black */
+  --border-frost-alt: rgba(217, 237, 254, 0.16);
+  --link: #58a6ff; /* GitHub dark link — bright, not jarring */
+  --code-bg: #161b22; /* GitHub dark code surface — elevated above bg */
   --inline-code-bg: rgba(110, 118, 129, 0.4);
-  --badge-bg: rgba(214, 235, 253, 0.06);
-  --badge-hover-bg: rgba(255, 255, 255, 0.28);
-  --surface-hover: rgba(255, 255, 255, 0.08);
+  --badge-bg: rgba(214, 235, 253, 0.07);
+  --badge-hover-bg: rgba(255, 255, 255, 0.12);
+  --surface-hover: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme='light'] {
-  --bg: #fcfdff;
-  --text-primary: #0a0a0a;
-  --text-secondary: #5c5c5c;
-  --text-muted: #6a737d;
-  --text-body: #24292f;
-  --border-frost: rgba(10, 30, 60, 0.14);
-  --border-frost-alt: rgba(10, 30, 60, 0.09);
-  --link: #0969da;
-  --code-bg: #f6f8fa;
-  --inline-code-bg: rgba(175, 184, 193, 0.2);
+  /* Light mode — warm paper palette
+   * #fafaf8 off-white: feels like paper, eliminates screen glare.
+   * #1c1c1e for headings: Apple's off-black, warmer than pure #000.
+   * #374151 for body: Tailwind gray-700 — optimal for long-form reading. */
+  --bg: #fafaf8;
+  --text-primary: #1c1c1e; /* Apple off-black — warm, not harsh */
+  --text-secondary: #6e6e73; /* Apple tertiary */
+  --text-muted: #6e6e73;
+  --text-body: #374151; /* Tailwind gray-700 — proven for long reading */
+  --border-frost: rgba(10, 30, 60, 0.12);
+  --border-frost-alt: rgba(10, 30, 60, 0.08);
+  --link: #0550ae; /* slightly deeper blue — good contrast on warm white */
+  --code-bg: #eef0f3; /* slightly elevated light surface */
+  --inline-code-bg: rgba(175, 184, 193, 0.25);
   --badge-bg: rgba(10, 30, 60, 0.05);
-  --badge-hover-bg: rgba(10, 30, 60, 0.12);
-  --surface-hover: rgba(10, 30, 60, 0.05);
+  --badge-hover-bg: rgba(10, 30, 60, 0.1);
+  --surface-hover: rgba(10, 30, 60, 0.04);
 }
 
 html {
@@ -151,15 +164,15 @@ p {
 }
 
 .post-meta .badge:hover {
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(66, 70, 73) !important;
+  color: #e6edf3 !important;
+  background-color: #30363d !important;
   border-color: rgba(214, 235, 253, 0.35) !important;
   cursor: pointer;
 }
 
 .category-card:hover {
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(66, 70, 73) !important;
+  color: #e6edf3 !important;
+  background-color: #30363d !important;
 }
 
 [data-theme='light'] .post-meta .badge:hover {
