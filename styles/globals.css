@@ -155,8 +155,7 @@ p {
 
 .post-meta {
   font-size: 16px;
-  color: var(--text-muted);
-  opacity: 0.8;
+  color: var(--text-muted); /* 6.15:1 dark / 4.85:1 light — both pass WCAG AA */
 }
 
 .post-meta .badge {
@@ -307,17 +306,15 @@ h1.post-title {
 }
 
 .subtext {
-  color: var(--text-muted) !important;
-  opacity: 0.8 !important;
-  transition:
-    color 0.15s ease,
-    opacity 0.15s ease;
+  color: var(
+    --text-muted
+  ) !important; /* 6.15:1 dark / 4.85:1 light — passes WCAG AA */
+  transition: color 0.15s ease;
 }
 
 a.subtext:hover,
 .subtext a:hover {
   color: var(--link) !important;
-  opacity: 1 !important;
   text-decoration: none;
 }
 
@@ -437,7 +434,9 @@ a.subtext:hover,
     align-self: center;
     margin-top: 6px;
     font-size: 13px;
-    opacity: 0.6;
+    color: var(
+      --text-muted
+    ); /* explicit color, no opacity — avoids stacking with parent */
     letter-spacing: 0.03em;
   }
 
