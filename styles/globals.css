@@ -77,15 +77,21 @@ body {
   word-wrap: break-word;
 }
 
+.post_title_link .post-title {
+  transition: color 0.15s ease;
+}
+
 .post_title_link:visited {
   color: var(--text-primary) !important;
   text-decoration: none;
 }
 
-.post_title_link:hover {
+.post_title_link:hover,
+.post_title_link:hover .post-title {
   --tw-text-opacity: 1 !important;
   color: var(--link) !important;
   cursor: pointer;
+  transition: color 0.15s ease;
 }
 
 h1,
