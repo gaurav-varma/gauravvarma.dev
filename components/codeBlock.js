@@ -32,8 +32,6 @@ export default function CodeBlock({ language, value, node }) {
   const highlightLine = (lineNumber) => {
     let style = {
       display: 'block',
-      fontSize: '15px',
-      lineHeight: 1.4,
       wordBreak: 'break-all',
       whiteSpace: 'pre-wrap',
     };

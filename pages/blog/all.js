@@ -36,7 +36,7 @@ export default function All({ posts }) {
         </div>
       </div>
       <BlogList posts={posts.slice(0, postsToShow)} />
-      <div className='mt-8 mx-auto justify-center text-center'>
+      <div className='mt-5 text-center'>
         {postsToShow < posts.length && (
           <button
             onClick={loadMorePosts}

@@ -38,7 +38,7 @@ export default function Category({ category }) {
         </div>
       </div>
       <BlogList posts={category.posts.slice(0, postsToShow)} />
-      <div className='mt-8 mx-auto justify-center text-center'>
+      <div className='mt-5 text-center'>
         {postsToShow < category.posts.length && (
           <button
             onClick={loadMorePosts}

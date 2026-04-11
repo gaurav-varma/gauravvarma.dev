@@ -229,6 +229,44 @@ p code {
 
 .markdown-body {
   color: var(--text-body);
+  font-size: 1.125rem; /* 18px — all markdown content matches li standard */
+  line-height: 1.8;
+}
+
+/* Code blocks: controlled by CSS, not inline styles in codeBlock.js */
+.markdown-body pre code,
+.markdown-body .codeblock code {
+  font-size: 1rem; /* 16px desktop */
+  line-height: 1.6;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, monospace;
+}
+
+/* li elements are not p tags so they don't inherit the global p font-size.
+ * Set explicitly to match body reading standard. Slightly smaller than p (20px)
+ * is intentional — lists feel dense, 18px keeps them readable without bloating. */
+.markdown-body li {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* Links inside list items — p a covers links in paragraphs but not li */
+.markdown-body li a {
+  color: var(--link);
+  transition: opacity 0.15s ease;
+}
+
+.markdown-body li a:hover {
+  opacity: 0.75;
+}
+
+/* Blockquotes — contain p tags so font-size is already handled,
+ * but add left border and spacing consistent with the design */
+.markdown-body blockquote {
+  border-left: 3px solid var(--border-frost);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: var(--text-secondary);
 }
 
 .markdown-body pre {
