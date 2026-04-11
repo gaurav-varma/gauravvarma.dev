@@ -357,33 +357,92 @@ a.subtext:hover,
   display: block;
 }
 
-/* ─── Mobile layout fixes ───────────────────────────────────────── */
+/* ─── Mobile layout & spacing ───────────────────────────────────── */
+/*
+ * Guideline: 8px grid + Vertical Rhythm
+ * Body text 20px × 1.8lh = 36px rhythm unit.
+ * On desktop col-lg-8 gives natural side margins that create breathing room.
+ * On mobile (full width) we compensate with increased vertical spacing so
+ * each content block has the same perceptual weight as on desktop.
+ *
+ * Apple HIG: 20px side margins on phone, 44px minimum touch targets.
+ * Material: 16dp min margins, 24dp between content groups.
+ */
+
 @media (max-width: 767px) {
+  /* ── Structural fixes (pre-existing) ── */
+
   /* Stack post-meta (date + badges) vertically so badges don't overflow */
   .post-meta.d-flex {
     flex-direction: column !important;
-    gap: 6px;
+    gap: 8px;
   }
 
   .post-meta .ms-auto {
     margin-left: 0 !important;
     display: flex !important;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 6px;
   }
 
   /* Stack page-header rows (h4 title + button) vertically */
   .d-flex:has(> h4) {
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 10px;
+    gap: 12px;
   }
 
   .d-flex:has(> h4) > .ms-auto {
     margin-left: 0 !important;
   }
 
-  /* Theme toggle: slightly smaller tap target on mobile */
+  /* ── Vertical rhythm — blog list ── */
+
+  /* Header: my-5 (48px) is too generous on mobile — halve it */
+  .headshot {
+    margin-top: 1.75rem !important;
+    margin-bottom: 1.75rem !important;
+  }
+
+  /* Give each post preview a clear top boundary */
+  .post-preview {
+    padding-top: 8px;
+  }
+
+  /* Space between post title and subtitle */
+  .post-preview .post-title {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Space between subtitle and date/meta */
+  .post-preview p.post-subtitle {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Separator between posts: increase from my-4 (24px) to 36px
+   * — matches 1× vertical rhythm unit, makes each post feel distinct */
+  article > hr {
+    margin-top: 2.25rem !important;
+    margin-bottom: 2.25rem !important;
+  }
+
+  /* Section hr (used in All Blogs / Categories pages after the title row):
+   * reduce my-5 (48px) to 32px — still a clear break but not wasteful */
+  .col-md-10 > hr,
+  .col-lg-8 > hr,
+  .col-xl-8 > hr {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* ── Post body (reading view) ── */
+
+  /* Top of markdown content: give the post body room after the hr */
+  .markdown-body {
+    padding-top: 8px;
+  }
+
+  /* Theme toggle: slightly smaller on mobile */
   .theme-toggle {
     width: 34px;
     height: 34px;
@@ -393,27 +452,53 @@ a.subtext:hover,
 }
 
 @media (max-width: 575px) {
-  /* Tighter horizontal padding on xs screens */
+  /* ── Side margins: 20px per Apple HIG (max reading width on small phones) */
   .container {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
-  /* Prevent long words / code from breaking layout */
+  /* ── Badges: ensure 44px minimum touch target height (Apple HIG) */
+  .post-meta .badge {
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+  }
+
+  /* ── Markdown body: long-form reading improvements ── */
+
+  /* Prevent long words / URLs from breaking layout */
   .markdown-body {
     overflow-wrap: break-word;
     word-break: break-word;
   }
 
-  /* Horizontally scrollable tables and code blocks */
-  .markdown-body table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
+  /* Headings inside post body: clear visual section breaks.
+   * 2.25rem top = 1.5× rhythm unit (54px) — signals a new major section.
+   * 0.6rem bottom keeps heading close to the content it titles. */
+  .markdown-body h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
   }
 
+  .markdown-body h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .markdown-body h4 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Paragraphs inside markdown: slight extra bottom gap so they breathe */
+  .markdown-body p {
+    margin-bottom: 1.25rem;
+  }
+
+  /* Code blocks: 1.5rem vertical margin — distinct from surrounding prose */
   .markdown-body pre {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -424,9 +509,37 @@ a.subtext:hover,
       Consolas, monospace;
   }
 
-  /* Images never overflow their container */
+  /* Lists: comfortable line spacing for bullet / numbered lists */
+  .markdown-body ul,
+  .markdown-body ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .markdown-body li {
+    margin-bottom: 0.4rem;
+    line-height: 1.75;
+  }
+
+  /* Tables: horizontal scroll rather than overflow */
+  .markdown-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Images: never overflow, maintain aspect ratio */
   .markdown-body img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+  }
+
+  /* Footer links: easier to tap */
+  footer p {
+    font-size: 15px;
+    line-height: 1.7;
   }
 }
