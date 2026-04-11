@@ -260,6 +260,8 @@ p code {
 
 p.post-subtitle {
   opacity: 0.75;
+  font-size: 1.125rem; /* 18px on desktop — clearly secondary to the title */
+  line-height: 1.7;
 }
 
 h1.post-title {
@@ -472,6 +474,24 @@ a.subtext:hover,
   .container {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+
+  /* ── Post excerpt: slightly smaller on mobile so title hierarchy is clear.
+   * At 20px body, excerpt would compete visually with the title.
+   * 17px (0.94× body) is clearly secondary while still comfortable to read. */
+  p.post-subtitle {
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.65;
+  }
+
+  /* ── Bottom nav links (VIEW ALL CATEGORIES / OLDER POSTS →):
+   * Increase touch target — currently too small to tap comfortably.
+   * padding adds tap area without changing visual size. */
+  .older-posts-links a,
+  [data-testid='older-posts-links'] a {
+    display: inline-block;
+    padding: 8px 0;
+    font-size: 13px;
   }
 
   /* ── Badges: ensure 44px minimum touch target height (Apple HIG) */
