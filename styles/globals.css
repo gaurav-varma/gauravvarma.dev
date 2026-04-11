@@ -313,3 +313,75 @@ a.subtext:hover,
   height: 16px;
   display: block;
 }
+
+/* ─── Mobile layout fixes ───────────────────────────────────────── */
+@media (max-width: 767px) {
+  /* Stack post-meta (date + badges) vertically so badges don't overflow */
+  .post-meta.d-flex {
+    flex-direction: column !important;
+    gap: 6px;
+  }
+
+  .post-meta .ms-auto {
+    margin-left: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  /* Stack page-header rows (h4 title + button) vertically */
+  .d-flex:has(> h4) {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  .d-flex:has(> h4) > .ms-auto {
+    margin-left: 0 !important;
+  }
+
+  /* Theme toggle: slightly smaller tap target on mobile */
+  .theme-toggle {
+    width: 34px;
+    height: 34px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Tighter horizontal padding on xs screens */
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Prevent long words / code from breaking layout */
+  .markdown-body {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Horizontally scrollable tables and code blocks */
+  .markdown-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  .markdown-body pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .markdown-body pre code {
+    font-size: 13px;
+  }
+
+  /* Images never overflow their container */
+  .markdown-body img {
+    max-width: 100%;
+    height: auto;
+  }
+}
