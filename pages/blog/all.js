@@ -27,6 +27,7 @@ export default function All({ posts }) {
                   className='btn btn-dark rounded ms-auto'
                   data-testid='view-all-categories-link'
                 >
+                  <span className='mobile-arrow'>← </span>
                   View All Categories
                 </a>
               </Link>

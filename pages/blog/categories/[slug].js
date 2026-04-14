@@ -26,6 +26,7 @@ export default function Category({ category }) {
               </h4>
               <Link href='/blog/categories' passHref>
                 <a href='replace' className='btn btn-dark rounded ms-auto'>
+                  <span className='mobile-arrow'>← </span>
                   View All Categories
                 </a>
               </Link>
