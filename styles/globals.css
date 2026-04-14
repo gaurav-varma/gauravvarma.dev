@@ -441,14 +441,21 @@ a.subtext:hover,
   }
 
   /* Stack page-header rows (h4 title + button) vertically */
+  /* Page header rows (h4 title + nav button): column layout on mobile.
+   * Button moves ABOVE the title — standard mobile back-navigation pattern
+   * (Apple HIG, Material): "where I came from" sits above "where I am". */
   .d-flex:has(> h4) {
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 12px;
+    gap: 8px;
   }
 
+  /* Button: order -1 places it before the h4 in the column */
   .d-flex:has(> h4) > .ms-auto {
+    order: -1;
     margin-left: 0 !important;
+    font-size: 13px !important; /* smaller — reads as nav, not primary action */
+    padding: 4px 12px !important;
   }
 
   /* ── Vertical rhythm — blog list ── */
