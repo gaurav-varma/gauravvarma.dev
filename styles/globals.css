@@ -357,6 +357,11 @@ a.subtext:hover,
   font-weight: 500;
 }
 
+/* Arrow only shown on mobile — hidden on desktop where button sits beside title */
+.mobile-arrow {
+  display: none;
+}
+
 /* Theme toggle button — fixed top-right */
 .theme-toggle {
   position: fixed;
@@ -446,7 +451,7 @@ a.subtext:hover,
   .d-flex:has(> h4) {
     flex-direction: column !important;
     align-items: center !important;
-    gap: 8px;
+    gap: 20px; /* generous space between nav button and title */
   }
 
   /* Nav button: above the title, compact, clearly navigational */
@@ -461,6 +466,11 @@ a.subtext:hover,
   .d-flex:has(> h4) > h4 {
     text-align: center;
     width: 100%;
+  }
+
+  /* Show arrow only on mobile */
+  .mobile-arrow {
+    display: inline;
   }
 
   /* ── Vertical rhythm — blog list ── */

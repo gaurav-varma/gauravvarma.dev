@@ -20,7 +20,9 @@ describe('The Categories Page', () => {
     render(<Categories categories={mockCategories} />);
     expect(screen.getByTestId('header')).toBeInTheDocument();
     expect(screen.getByText('All Categories')).toBeInTheDocument();
-    expect(screen.getByText('← View All Blogs')).toBeInTheDocument();
+    expect(
+      screen.getByText('View All Blogs', { exact: false }),
+    ).toBeInTheDocument();
     expect(screen.getByTestId('category-list')).toBeInTheDocument();
     expect(screen.getByTestId('footer')).toBeInTheDocument();
   });
